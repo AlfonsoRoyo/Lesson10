@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("p1_Calc")]
+[assembly: AssemblyTitle("p1Calc")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("p1_Calc")]
+[assembly: AssemblyProduct("p1Calc")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c0d1fde5-934a-4ff3-b5ea-397ed36ccef3")]
+[assembly: Guid("e2a1060a-2046-451c-8a46-a6d5008380c5")]
 
 // Version information for an assembly consists of the following four values:
 //

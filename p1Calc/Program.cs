@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace p1_Calc
+namespace p1Calc
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace p1_Calc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new fCalc());
         }
     }
 }

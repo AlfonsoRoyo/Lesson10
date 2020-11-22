@@ -1,6 +1,7 @@
-﻿namespace p1_Calc
+﻿
+namespace p1Calc
 {
-    partial class Form1
+    partial class fCalc
     {
         /// <summary>
         /// Required designer variable.
@@ -19,6 +20,7 @@
             }
             base.Dispose(disposing);
         }
+
 
         #region Windows Form Designer generated code
 
@@ -55,6 +57,7 @@
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(203, 20);
             this.txtResultado.TabIndex = 0;
+            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // bCE
             // 
@@ -64,6 +67,7 @@
             this.bCE.TabIndex = 1;
             this.bCE.Text = "CE";
             this.bCE.UseVisualStyleBackColor = true;
+            this.bCE.Click += new System.EventHandler(this.bCE_Click);
             // 
             // b1
             // 
@@ -73,6 +77,7 @@
             this.b1.TabIndex = 2;
             this.b1.Text = "1";
             this.b1.UseVisualStyleBackColor = true;
+            this.b1.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b2
             // 
@@ -82,6 +87,7 @@
             this.b2.TabIndex = 3;
             this.b2.Text = "2";
             this.b2.UseVisualStyleBackColor = true;
+            this.b2.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b3
             // 
@@ -91,6 +97,7 @@
             this.b3.TabIndex = 4;
             this.b3.Text = "3";
             this.b3.UseVisualStyleBackColor = true;
+            this.b3.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b4
             // 
@@ -100,6 +107,7 @@
             this.b4.TabIndex = 5;
             this.b4.Text = "4";
             this.b4.UseVisualStyleBackColor = true;
+            this.b4.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b5
             // 
@@ -109,6 +117,7 @@
             this.b5.TabIndex = 6;
             this.b5.Text = "5";
             this.b5.UseVisualStyleBackColor = true;
+            this.b5.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b6
             // 
@@ -118,6 +127,7 @@
             this.b6.TabIndex = 7;
             this.b6.Text = "6";
             this.b6.UseVisualStyleBackColor = true;
+            this.b6.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b7
             // 
@@ -127,6 +137,7 @@
             this.b7.TabIndex = 8;
             this.b7.Text = "7";
             this.b7.UseVisualStyleBackColor = true;
+            this.b7.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b8
             // 
@@ -136,6 +147,7 @@
             this.b8.TabIndex = 9;
             this.b8.Text = "8";
             this.b8.UseVisualStyleBackColor = true;
+            this.b8.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b9
             // 
@@ -145,6 +157,7 @@
             this.b9.TabIndex = 10;
             this.b9.Text = "9";
             this.b9.UseVisualStyleBackColor = true;
+            this.b9.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // b0
             // 
@@ -154,6 +167,7 @@
             this.b0.TabIndex = 11;
             this.b0.Text = "0";
             this.b0.UseVisualStyleBackColor = true;
+            this.b0.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // bDecimal
             // 
@@ -163,6 +177,7 @@
             this.bDecimal.TabIndex = 12;
             this.bDecimal.Text = ".";
             this.bDecimal.UseVisualStyleBackColor = true;
+            this.bDecimal.Click += new System.EventHandler(this.bDigit_Click);
             // 
             // bDiv
             // 
@@ -172,6 +187,7 @@
             this.bDiv.TabIndex = 13;
             this.bDiv.Text = "/";
             this.bDiv.UseVisualStyleBackColor = true;
+            this.bDiv.Click += new System.EventHandler(this.bResult_Click);
             // 
             // bX
             // 
@@ -181,6 +197,7 @@
             this.bX.TabIndex = 14;
             this.bX.Text = "X";
             this.bX.UseVisualStyleBackColor = true;
+            this.bX.Click += new System.EventHandler(this.bResult_Click);
             // 
             // bMinus
             // 
@@ -190,6 +207,7 @@
             this.bMinus.TabIndex = 15;
             this.bMinus.Text = "-";
             this.bMinus.UseVisualStyleBackColor = true;
+            this.bMinus.Click += new System.EventHandler(this.bResult_Click);
             // 
             // bPlus
             // 
@@ -199,6 +217,7 @@
             this.bPlus.TabIndex = 16;
             this.bPlus.Text = "+";
             this.bPlus.UseVisualStyleBackColor = true;
+            this.bPlus.Click += new System.EventHandler(this.bResult_Click);
             // 
             // bPrint
             // 
@@ -217,12 +236,13 @@
             this.bResult.TabIndex = 18;
             this.bResult.Text = "=";
             this.bResult.UseVisualStyleBackColor = true;
+            this.bResult.Click += new System.EventHandler(this.bResult_Click);
             // 
-            // Form1
+            // fCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 403);
+            this.ClientSize = new System.Drawing.Size(281, 167);
             this.Controls.Add(this.bResult);
             this.Controls.Add(this.bPrint);
             this.Controls.Add(this.bPlus);
@@ -242,7 +262,7 @@
             this.Controls.Add(this.b1);
             this.Controls.Add(this.bCE);
             this.Controls.Add(this.txtResultado);
-            this.Name = "Form1";
+            this.Name = "fCalc";
             this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,5 +292,4 @@
         private System.Windows.Forms.Button bResult;
     }
 }
-
 
